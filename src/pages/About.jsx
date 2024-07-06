@@ -9,7 +9,7 @@ import ContactFormSection from "../components/core/AboutPage/ContactFormSection"
 import LearningGrid from "../components/core/AboutPage/LearningGrid"
 import Quote from "../components/core/AboutPage/Quote"
 import StatsComponenet from "../components/core/AboutPage/Stats"
-import HighlightText from "../components/core/HomePage/HighlightText"
+// import HighlightText from "../components/core/HomePage/HighlightText"
 import ReviewSlider from "../components/common/ReviewSlider"
 import Footer from "../components/common/Footer"
 
@@ -24,7 +24,8 @@ const About = () => {
       <section className="bg-richblack-700">
         <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white">
 
-            <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%]">  Driving Innovation in Online Education for a  <HighlightText text={"Brighter Future"} />
+            <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%]">  Driving Innovation in Online Education for a  />
+{/*               <HighlightText text={"Brighter Future"} /> */}
                 <p className="mx-auto mt-3 text-center text-base font-medium text-richblack-300 lg:w-[85%]"> TechVeda is at the forefront of driving innovation in online education. We're passionate about creating a brighter future by offering cutting-edge courses, leveraging emerging technologies, and nurturing a vibrant learning community. </p>             
             </header>
 
