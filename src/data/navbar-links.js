@@ -1,20 +1,18 @@
-const NavbarLinks = [
-    {
-      title: "Home",
-      path: "/",
-    },
-    {
-      title: "Catalog",
-      path: '/catalog',
-    },
-    {
-      title: "About Us",
-      path: "/about",
-    },
-    {
-      title: "Contact Us",
-      path: "/contact",
-    },
-  ];
-
-  export default NavbarLinks 
+export const NavbarLinks = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "Catalog",
+    // path: '/catalog',
+  },
+  {
+    title: "About Us",
+    path: "/about",
+  },
+  {
+    title: "Contact Us",
+    path: "/contact",
+  },
+];

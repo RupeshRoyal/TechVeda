@@ -1,18 +1,12 @@
-import Template from "../components/core/Auth/Template";
-import loginImg from "../assets/Images/login.webp";
-import React from "react";
+import loginImg from "../assets/Images/login.webp"
+import Template from "../components/core/Auth/Template"
+import React from "react"
 
-function Login({ setIsLoggedIn }) {
+function Login({setIsLoggedIn}){
   return (
-    <Template
-      title="Welcome Back"
-      desc1="Build skills for today, tomorrow, and beyond."
-      desc2="Education to future-proof your career."
-      image={loginImg}
-      formType="login"
-      setIsLoggedIn={setIsLoggedIn}
-    />
-  );
-}
 
-export default Login;
+    <Template title="Welcome Back"  description1="Build skills for today, tomorrow, and beyond." description2="Education to future-proof your career."   image = {loginImg} formtype = "login"/>
+
+  )}
+
+export default Login
