@@ -1,4 +1,4 @@
-# TechVeda   [```live```](https://TechVeda-abhikant.vercel.app/)
+# TechVeda  
 
 TechVeda is a fully functional ed-tech learning platform that enables users to create, consume, and rate educational content. The platform is built using the ```MERN stack``` , which includes ```ReactJS```,``` NodeJS```, ```MongoDB```, and ```ExpressJS```.
 

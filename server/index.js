@@ -17,11 +17,22 @@
 const express = require("express");
 const app = express();
 
-const userRoutes = require("./routes/User");
-const profileRoutes = require("./routes/Profile");
-const paymentRoutes = require("./routes/Payments");
-const courseRoutes = require("./routes/Course");
-const contactUsRoute = require("./routes/Contact");
+// const userRoutes = require("./routes/User");
+// const profileRoutes = require("./routes/Profile");
+// const paymentRoutes = require("./routes/Payments");
+// const courseRoutes = require("./routes/Course");
+// const contactUsRoute = require("./routes/Contact");
+const path = require('path');
+const fs = require('fs');
+
+console.log("Current directory:", __dirname);
+console.log("Files in routes directory:", fs.readdirSync(path.resolve(__dirname, './routes')));
+
+const userRoutes = require(path.resolve(__dirname, './routes/User'));
+const profileRoutes = require(path.resolve(__dirname, './routes/Profile'));
+const paymentRoutes = require(path.resolve(__dirname, './routes/Payments'));
+const courseRoutes = require(path.resolve(__dirname, './routes/Course'));
+const contactUsRoute = require(path.resolve(__dirname, './routes/Contact'));
 
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
@@ -31,7 +42,7 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 //database connect
 database.connect();
@@ -65,7 +76,7 @@ app.get("/", (req, res) => {
 	});
 });
 
-app.listen(PORT, () => {
-	console.log(`App is running at ${PORT}`)
+app.listen(port, () => {
+	console.log(`App is running at ${port}`)
 })
 
